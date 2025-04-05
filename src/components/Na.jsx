@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function MegaMenu() {
-  const [activeCategory, setActiveCategory] = useState(null);
   
   const categories = [
     { name: "Clothing", link: "/category/clothing", subcategories: ["Men", "Women", "Kids"] },

@@ -32,7 +32,7 @@ const Register = () => {
   
     const newUser = {
       ...formData,
-      id: Date.now(), // Unique ID based on timestamp
+      id: Date.now(), 
     };
   
     users.push(newUser);

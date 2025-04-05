@@ -72,13 +72,13 @@ const deleteCustomer = (e, id) => {
         <td className="px-6 py-4 text-left whiterspace-nowrap">{customer.username}</td>
         <td className="px-6 py-4 text-left whiterspace-nowrap">{customer.password}</td>
         <td className="px-6 py-4 text-left whiterspace-nowrap">
-          <a 
-          onClick={(e,id)=> editCustomer(e, customer.id)}
-          className='hover:text-green-500 hover:cursor-pointer'>Edit    </a>
+          <button 
+          onClick={(e) => editCustomer(e, customer.id)}
+          className='hover:text-green-500 hover:cursor-pointer bg-transparent border-none p-0'>Edit</button>
           
-          <a
-          onClick={(e,id)=> deleteCustomer(e, customer.id)}
-          className='hover:text-red-500 hover:cursor-pointer'>Delete</a>
+          <button
+          onClick={(e) => deleteCustomer(e, customer.id)}
+          className='hover:text-red-500 hover:cursor-pointer bg-transparent border-none p-0'>Delete</button>
         </td>
         </tr>
         ))}

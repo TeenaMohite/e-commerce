@@ -29,7 +29,7 @@ const UpdateCustomer = () => {
             }
         };
         fetchData();
-    }, []);
+    }, [customer.id]);
 
     const updateCustomer = (e) => {
         e.preventDefault();

@@ -75,22 +75,22 @@ const Footer = () => {
           <div className="mt-5">
             <h3 className="text-lg font-bold">Stay Connected</h3>
             <div className="flex space-x-4 mt-2">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                 <FaFacebook className="text-3xl hover:text-blue-500 transition" />
               </a>
-              <a href="https://twitter.com" target="_blank">
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
                 <FaTwitter className="text-3xl hover:text-blue-400 transition" />
               </a>
-              <a href="https://web.whatsapp.com" target="_blank">
+              <a href="https://web.whatsapp.com" target="_blank" rel="noreferrer">
                 <FaWhatsapp className="text-3xl hover:text-green-500 transition" />
               </a>
-              <a href="https://www.linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
                 <FaLinkedin className="text-3xl hover:text-blue-500 transition" />
               </a>
-              <a href="https://www.instagram.com" target="_blank">
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                 <FaInstagram className="text-3xl hover:text-pink-500 transition" />
               </a>
-              <a href="https://www.youtube.com" target="_blank">
+              <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
                 <FaYoutube className="text-3xl hover:text-red-500 transition" />
               </a>
             </div>

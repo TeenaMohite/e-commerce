@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
-  const [error, setError] = useState("");
+  const [error] = useState("");
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -13,15 +13,15 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     
-    // Retrieve users from localStorage
+   
     const users = JSON.parse(localStorage.getItem("users")) || [];
     
-    // Find matching user
+  
     const user = users.find(u => u.email === credentials.email && u.password === credentials.password);
     
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
-      localStorage.setItem("loggedInUserId", user.id); // 👈 Add this line
+      localStorage.setItem("loggedInUserId", user.id); 
       alert("Login successful!");
       navigate("/"); 
         window.location.reload(); 

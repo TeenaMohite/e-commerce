@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Star, Package, Gift, Search, User, Heart, ShoppingCart, ChevronDown } from "lucide-react";
+import { Package, Gift, Search, User, Heart, ShoppingCart, ChevronDown } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
     localStorage.removeItem("loggedInUser");
     setUser(null);
     navigate("/login");
-    window.location.reload(); // Reload to update Navbar
+    window.location.reload(); 
   };
 
   return (

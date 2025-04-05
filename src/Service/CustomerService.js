@@ -22,4 +22,5 @@ class CustomerService {
         return axios.put(CUSTOMER_SERVICE_URL+"/"+id, customer);
     }
 }
-export default new CustomerService();
+const customerServiceInstance = new CustomerService();
+export default customerServiceInstance;
